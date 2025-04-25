@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scratch на весь экран</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #e8edf1;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .logo-mask {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 40px;
+      background-color: #e8edf1;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <iframe src="https://scratch.mit.edu/projects/1165871709/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    <div class="logo-mask"></div>
+  </div>
+</body>
+</html>
